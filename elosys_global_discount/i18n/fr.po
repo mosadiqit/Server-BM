@@ -1,0 +1,64 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* elosys_global_discount
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0-20190424\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-07 13:59+0000\n"
+"PO-Revision-Date: 2021-02-07 13:59+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: elosys_global_discount
+#: model_terms:ir.ui.view,arch_db:elosys_global_discount.report_account_invoice_document_global_discount
+msgid "<strong>Discount of:</strong>"
+msgstr "<strong>Remise de:</strong>"
+
+#. module: elosys_global_discount
+#: model:res.groups,name:elosys_global_discount.group_global_discount
+msgid "Can set a global discount"
+msgstr "Peut définir une remise globale"
+
+#. module: elosys_global_discount
+#: code:addons/elosys_global_discount/models/account_invoice.py:10
+#: code:addons/elosys_global_discount/models/sale_order.py:8
+#: model:ir.model.fields,field_description:elosys_global_discount.field_account_invoice__global_discount
+#: model:ir.model.fields,field_description:elosys_global_discount.field_sale_order__global_discount
+#, python-format
+msgid "Global discount"
+msgstr "Remise globale"
+
+#. module: elosys_global_discount
+#: model:ir.model,name:elosys_global_discount.model_account_invoice
+msgid "Invoice"
+msgstr "Facture"
+
+#. module: elosys_global_discount
+#: model:ir.model,name:elosys_global_discount.model_sale_order
+msgid "Sale Order"
+msgstr "Bon de commande"
+
+#. module: elosys_global_discount
+#: code:addons/elosys_global_discount/models/account_invoice.py:49
+#: code:addons/elosys_global_discount/models/account_invoice.py:55
+#: model:ir.model.fields,field_description:elosys_global_discount.field_account_invoice_line__latest_discount
+#: model:ir.model.fields,field_description:elosys_global_discount.field_account_invoice_line__new_discount
+#, python-format
+msgid "Disc (%)"
+msgstr "Rem. (%)"
+
+#. module: elosys_global_discount
+#: code:addons/elosys_global_discount/models/sale_order.py:38
+#: code:addons/elosys_global_discount/models/sale_order.py:44
+#: model:ir.model.fields,field_description:elosys_global_discount.field_sale_order_line__latest_discount
+#: model:ir.model.fields,field_description:elosys_global_discount.field_sale_order_line__new_discount
+#, python-format
+msgid "Discount"
+msgstr "Remise"
+

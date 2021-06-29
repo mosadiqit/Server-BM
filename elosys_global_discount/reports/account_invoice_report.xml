@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<odoo>
+    <template id="report_account_invoice_document_global_discount" inherit_id="account.report_invoice_document">
+        <xpath expr="//tr[@class='border-black o_total']" position="before">
+            <t groups="sales_team.group_sale_salesman">
+                <tr t-if="o.global_discount" class="border-black">
+                    <td><strong>Discount of:</strong></td>
+                    <td class="text-right">
+                        <span t-field="o.global_discount"/>
+                        <span> %</span>
+                    </td>
+                </tr>
+            </t>
+        </xpath>
+
+        <xpath expr="//span[@t-field='line.discount']" position="replace">
+            <span t-field="line.new_discount"/>
+        </xpath>
+    </template>
+</odoo>

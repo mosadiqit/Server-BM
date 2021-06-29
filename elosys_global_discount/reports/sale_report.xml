@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<odoo>
+    <template id="report_sale_invoice_document_custom_discount" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//span[@t-field='line.discount']" position="replace">
+            <span t-field="line.new_discount"/>
+        </xpath>
+    </template>
+</odoo>

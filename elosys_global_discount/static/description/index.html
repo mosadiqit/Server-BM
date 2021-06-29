@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TABS--->
+<section class="oe_container mt32 mb32" style="margin-left:calc(-42vw + 50%); width:84vw">
+    <div class="row" style="max-width:1540px; margin:0 auto; padding-bottom:64px; border-radius:15px">
+        <ul role="tablist" class="nav nav-tabs justify-content-center" data-tabs="tabs"
+            style="border:none; background-color:unset; margin:0 auto">
+            <li class="nav-item"
+                style="border-top-right-radius:10px; border-top-left-radius:10px; background-color:#e6f6ff; margin-right:10px; border:1px solid #ddd; border-bottom:0">
+                <a href="#sequ_features" data-toggle="tab" aria-expanded="true" class="show active"
+                    style="font-family:Roboto; text-transform:uppercase; font-weight:600; font-size:15px; letter-spacing:1px; padding:11px 20px; border-top-left-radius:10px; border-top-right-radius:10px; color:#2b2b2b; border:1px solid transparent">
+                    <img src="key_feature.svg"
+                        style="width:18px; margin-top:-4px; margin-right:6px">FEATURES</a> <span class="border-left-0"
+                    style="float:left; margin-top:-4px; margin-left:-5px; width:5px; height:5px; border:1px solid #ddd; border-top:0; border-radius:0 0 5px 0"></span>
+                <span class="border-right-0"
+                    style="float:right; margin-top:-4px; margin-right:-5px; width:5px; height:5px; border:1px solid #ddd; border-top:0; border-radius:0 0 0 5px"></span>
+            </li>
+            <li class="nav-item"
+                style="border-top-right-radius:10px; border-top-left-radius:10px; background-color:#e6f6ff; margin-right:10px; border:1px solid #ddd; border-bottom:0">
+                <a href="#screenshots" data-toggle="tab" aria-expanded="true" class="show"
+                    style="font-family:Roboto; text-transform:uppercase; font-weight:600; font-size:15px; letter-spacing:1px; padding:11px 20px; border-top-left-radius:10px; border-top-right-radius:10px; color:#2b2b2b; border:1px solid transparent">
+                    <img src="screen_shot.svg"
+                        style="width:18px; margin-top:-4px; margin-right:6px">SREENSHOTS & GIF</a> <span
+                    class="border-left-0"
+                    style="float:left; margin-top:-4px; margin-left:-5px; width:5px; height:5px; border:1px solid #ddd; border-top:0; border-radius:0 0 5px 0"></span>
+                <span class="border-right-0"
+                    style="float:right; margin-top:-4px; margin-right:-5px; width:5px; height:5px; border:1px solid #ddd; border-top:0; border-radius:0 0 0 5px"></span>
+            </li>
+        </ul>
+        <div class="container-fluid" style="border:1px solid #eee; border-radius:10px">
+            <div class="tab-content container pt-3" id="tabs_content">
+                <!-- Features Tabs -->
+                <div class="tab-pane show active" id="sequ_features">
+                    <div class="container mt48">
+                        <section id="other-legal-references">
+                            <h3 class="text-center alert"
+                                style="font-family:Roboto; font-weight:500; color:#091E42; background-color:#F0F4F7; border-radius:10px">
+                                Fonctionnalités Principales</h3>
+                            <ul>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    A la création d’un nouveau document de vente, devis, bon de commande ou facture en brouillon, vous
+                                    avez à disposition un champ nommé « Remise globale ».
+                                </li>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    Ce champ vous permet d’appliqué une remise sur le montant global de votre transaction.
+                                    <ul style="list-style-type: circle;">
+                                        <li>Cette remise est répercutée sur l’ensembles des articles de votre transaction.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="mb8" style="font-family:Roboto; color:#091E42">
+                                <strong>NOTE : </strong>ce champ est visible pour tous les utilisateurs mais ne peut être manipulé que par les utilisateurs aillant
+                                les droits nécessaires sur odoo (Voir Implémentation)
+                            </p>
+                            <br>
+                            <h3 class="text-center alert"
+                                style="font-family:Roboto; font-weight:500; color:#091E42; background-color:#F0F4F7; border-radius:10px">
+                                Implémentation</h3>
+                            <ul>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    Le module est disponible en :
+                                    <ul style="list-style-type: circle;">
+                                        <li>Anglais.</li>
+                                        <li>Français ;</li>
+                                    </ul>
+                                </li>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    Pour accéder à cette fonctionnalité il faut :
+                                    <ul style="list-style-type: circle;">
+                                        <li>Passé en mode développeur</li>
+                                        <li>Dans le menu configuration du module vente, cochez la case « Remise ».</li>
+                                        <li>Dans le menu configuration des utilisateurs, cochez la case « Peut définir une remise globale » </li>
+                                    </ul>
+                                    <br>
+                                    Voir l’onglet « SREENSHOTS »
+                                </li>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    Vous verrez, à ce moment-là, apparaitre sur vos formulaires de vente, le champs « Remise Globale ».
+                                </li>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    Ce champ permet d’introduire un pourcentage de remise à appliquer sur le montant global.
+                                    <ul style="list-style-type: circle;">
+                                        <li>Le champ « Remise globale » est repris d’un formulaire à l’autre selon la progression native des
+                                            formulaires de odoo.
+                                            <br>
+                                            <span style="margin-left:60px;">- Devis → Bon de commande → Facture brouillon → Facture validé</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    Le champ « Remise globale » est modifiable sur les devis et factures a l’état brouillon.
+                                </li>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    Le champ « Remise globale » est en lecture seule sur les bons de commandes et les factures validés
+                                </li>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    Le champ « Remise globale » est en lecture seule sur tous les formulaires pour les utilisateurs n’aillant pas
+                                    le droit de le modifié.
+                                </li>
+                                <br>
+                            </ul>
+                            <h3 class="text-center alert"
+                                style="font-family:Roboto; font-weight:500; color:#091E42; background-color:#F0F4F7; border-radius:10px">
+                                Impressions & Rapports</h3>
+                            <ul>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    La valeur de la remise globales est visible sur les documents de ventes si on les imprime :
+                                    <ul style="list-style-type: circle;">
+                                        <li>Impression d’un devis ou d’un bon de commande</li>
+                                        <li>Impression d’une facture avant et après validation</li>
+                                    </ul>
+                                    <br>
+                                    Voir l’onglet « SREENSHOTS »
+                                </li>
+                                <br>
+                            </ul>
+                            <h3 class="text-center alert"
+                                style="font-family:Roboto; font-weight:500; color:#091E42; background-color:#F0F4F7; border-radius:10px">
+                                Scénarios</h3>
+                            <ul>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    Après avoir tapé une valeur de remise globale non nulle puis sauvegarder.
+                                </li>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    Celle-ci se répercutes sur tous les articles.
+                                    <ul style="list-style-type: circle;">
+                                        <li>Le montant est recalculé en fonction des nouvelles valeurs.</li>
+                                    </ul>
+                                </li>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    Si vous modifié une des valeurs des remises partielles (propre à chaque article).
+                                    <ul style="list-style-type: circle;">
+                                        <li>Le montant de la remise globale redevient nul.</li>
+                                        <li>Les remises appliquées sur autres lignes de commandes restent telles qu’elles sont.</li>
+                                        <li>Le montant est recalculé en fonction des nouvelles valeurs.</li>
+                                    </ul>
+                                </li>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    Si vous modifié à nouveau le montant de la remise Globale
+                                    <ul style="list-style-type: circle;">
+                                        <li>Cette valeur est reprise sur Les toutes les remises partielles (pas articles).</li>
+                                        <li>Le montant est recalculé en fonction des nouvelles valeurs.</li>
+                                    </ul>
+                                    <br>
+                                    Voir l’onglet « SREENSHOTS »
+                                </li>
+                            </ul>
+                            <br>
+                            <p class="mb8" style="font-family:Roboto; color:#091E42">
+                                <strong>NOTE : </strong>Le montant de la TVA à la vente est recalculé à chaque modification, que ce soit sur les remises partielles
+                                ou sur la remise globale.
+                            </p>
+                                <h3 class="text-center alert"
+                                style="font-family:Roboto; font-weight:500; color:#091E42; background-color:#F0F4F7; border-radius:10px">
+                                Versions</h3>
+                            <ul>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    Version 12.0.1.1. | Avril 2021 | Correction de bug.
+                                </li>
+                                <li class="mb8" style="font-family:Roboto; color:#091E42">
+                                    Version 12.0.0.1. | Mars 2021 
+                                </li>
+                            </ul>
+                            <br>
+                        </section>
+                    </div>
+                </div>
+                <div class="tab-pane" id="screenshots" role="tabpanel" aria-labelledby="screenshots_tab">
+                    <div class="mb48"></div>
+                    <div style="margin-bottom:4%">
+                        <h3 class="text-center mb32"
+                            style="letter-spacing:-1px !important; font-family:Roboto; font-weight:400">
+                            Démonstration De la Fonctionnalité
+                        </h3>
+                        <div class="mt16 mb16 text-center">
+                            <img src="remise.gif"
+                                class="img img-responsive center-block">
+                        </div>
+                    </div>
+                    <br>
+                    <div style="margin-bottom:4%">
+                        <h3 class="text-center mb32"
+                            style="letter-spacing:-1px !important; font-family:Roboto; font-weight:400">
+                            Rendre le champ « Remise globale » Visible
+                        </h3>
+                        <div class="mt16 mb16 text-center">
+                            <img src="screenshot_2.png"
+                                class="img img-responsive center-block">
+                        </div>
+                        <br>
+                        <div class="mt16 mb16 text-center">
+                            <img src="screenshot_3.png"
+                                class="img img-responsive center-block">
+                        </div>
+                    </div>
+                    <br>
+                    <div style="margin-bottom:4%">
+                        <h3 class="text-center mb32"
+                            style="letter-spacing:-1px !important; font-family:Roboto; font-weight:400">
+                            Impression & rapport
+                        </h3>
+                        <div class="mt16 mb16 text-center">
+                            <img src="screenshot_4.png"
+                                class="img img-responsive center-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="account_invoice_form_global_discount" model="ir.ui.view">
+        <field name="name">account.invoice.form.global.discount</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='comment']" position="after">
+                <div class="oe_clear"/>
+                <div class="oe_inline" name="global_discount" invisible="1">
+                    <label for="global_discount"/>
+                    <field name="global_discount"
+                           class="oe_inline"
+                           groups="elosys_global_discount.group_global_discount"
+                           attrs="{'readonly': [('state','not in',['draft'])]}"/>
+                    <span> %</span>
+                </div>
+            </xpath>
+
+            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='discount']" position="after">
+                <field name="new_discount"/>
+                <field name="latest_discount" invisible="1"/>
+            </xpath>
+
+            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='discount']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="account_invoice_access_view_global_discount" model="ir.ui.view">
+        <field name="name">account.invoice.access.view.global.discount</field>
+        <field name="model">account.invoice</field>
+        <field name="groups_id" eval="[(6, 0, [ref('sale.group_discount_per_so_line')])]"/>
+        <field name="inherit_id" ref="account.invoice_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='global_discount']" position="attributes">
+                <attribute name="invisible">0</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

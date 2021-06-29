@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sale_order_form_view_global_discount" model="ir.ui.view">
+	    <field name="name">sale.order.form.view.global.discount</field>
+	    <field name="model">sale.order</field>
+	    <field name="inherit_id" ref="sale.view_order_form"/>
+	    <field name="arch" type="xml">
+            <xpath expr="//field[@name='note']" position="after">
+                <div class="oe_clear"/>
+                <div class="oe_inline" name="global_discount" invisible="1">
+                    <label for="global_discount"/>
+                    <field name="global_discount"
+                           class="oe_inline"
+                           groups="elosys_global_discount.group_global_discount"
+                           attrs="{'readonly': [('state','not in',['draft'])]}"/>
+                    <span> %</span>
+                </div>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']/tree/field[@name='discount']" position="after">
+                <field name="new_discount" groups="sale.group_discount_per_so_line"/>
+                <field name="latest_discount" invisible="1"/>
+            </xpath>
+
+            <xpath expr="//field[@name='order_line']/tree/field[@name='discount']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+	    </field>
+    </record>
+
+    <record id="sale_order_access_view_global_discount" model="ir.ui.view">
+        <field name="name">sale.order.access.view.global.discount</field>
+        <field name="model">sale.order</field>
+        <field name="groups_id" eval="[(6, 0, [ref('sale.group_discount_per_so_line')])]"/>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='global_discount']" position="attributes">
+                <attribute name="invisible">0</attribute>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
